@@ -5,8 +5,9 @@ export const BookContext = createContext();
 
 const BookContextProvider = (props) => {
   const [books, setBooks] = useState([
-    {title: 'Pride and Prejudice', author: 'Jane Austen', id: 1 },
-    {title: 'Pride and Prejudice', author: 'Jane Austen', id: 1 }
+    {title: 'The Red Lotus', author: 'Chris Bohjalian', id: v4() },
+    {title: 'Hamnet', author: "Maggie O'Ferrell", id: v4() },
+    {title: 'Bridgerton: The Duke and I', author: "Julia Quinn", id: v4() }
   ]);
 
   const addBook = (title, author) => {
